@@ -1,0 +1,32 @@
+[
+  {
+    "message": "My order hasn't arrived yet and it was supposed to be delivered yesterday."
+  },
+  {
+    "message": "I was charged twice for my order and need a refund."
+  },
+  {
+    "message": "I can't log into my account and the password reset link isn't working."
+  },
+  {
+    "message": "The product I received is damaged. Can you send a replacement?"
+  },
+  {
+    "message": "My payment failed but the money was deducted from my bank account."
+  },
+  {
+    "message": "I want to cancel my subscription before the next billing cycle."
+  },
+  {
+    "message": "Do you offer discounts for bulk purchases?"
+  },
+  {
+    "message": "I paid for express delivery but my package still hasn't arrived."
+  },
+  {
+    "message": "I entered the wrong shipping address for my order."
+  },
+  {
+    "message": "I just wanted to say I love your products!"
+  }
+]
