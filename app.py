@@ -1,15 +1,22 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from router import classify_ticket
 
 # Initialize FastAPI app
-app = FastAPI()
+app = FastAPI(title="AI Support Ticket Router")
 
-# Define request schema
+
+# -----------------------------
+# Request Schema
+# -----------------------------
 class Ticket(BaseModel):
-    message: str
+    message: str = Field(..., min_length=10, max_length=1000)
+    # input validation of message for FastAPI to avoid bad requests
 
-# API endpoint
+
+# -----------------------------
+# API Endpoint
+# -----------------------------
 @app.post("/route-ticket")
 def route_ticket(ticket: Ticket):
 
