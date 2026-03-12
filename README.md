@@ -132,6 +132,15 @@ This pattern can be extended to automate workflows such as:
 * operational alerts
 
 ---
+## Reliability Improvements
+
+The routing system includes safeguards to ensure reliable automation:
+
+- Structured JSON outputs from the LLM
+- Schema validation using Pydantic
+- Fallback routing when classification fails
+
+These safeguards ensure consistent routing decisions for downstream support systems.
 
 ## Author
 
